@@ -7,7 +7,16 @@
     <style>
         :root { --primary: #2c3e50; --gold: #d4af37; --bg: #fdfaf3; }
         body { font-family: 'Segoe UI', sans-serif; background: var(--bg); text-align: center; margin: 0; padding: 20px; }
-        
+        body {
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--bg);
+    margin: 0;
+    padding: 20px;
+    display: flex; /* Tambahkan ini */
+    flex-direction: column; /* Tambahkan ini */
+    align-items: center; /* Tambahkan ini */
+    min-height: 100vh;
+}
         /* Bar Pencarian */
         #searchInput { 
             padding: 12px 20px; width: 80%; max-width: 400px; 
@@ -16,8 +25,26 @@
         }
 
         /* Container Silsilah */
-     /* Container Silsilah */
+  /* Menjamin semuanya di tengah layar */
 .tree-container { 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    width: 100%; 
+    margin: 0 auto;
+}
+
+/* Menata barisan kotak agar tetap di tengah */
+.row { 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    gap: 15px; 
+    flex-wrap: wrap; 
+    width: 100%; 
+    max-width: 1200px; 
+    margin: 20px auto; /* Margin auto ini kunci agar tengah di PC */
+}
     display: flex; 
     flex-direction: column; 
     align-items: center; 
