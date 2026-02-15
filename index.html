@@ -35,15 +35,16 @@
 }
 
 /* Menata barisan kotak agar tetap di tengah */
-.row { 
-    display: flex; 
-    justify-content: center; 
+.row {
+    display: flex;
+    justify-content: center;
     align-items: center;
-    gap: 15px; 
-    flex-wrap: wrap; 
-    width: 100%; 
-    max-width: 1200px; 
-    margin: 20px auto; /* Margin auto ini kunci agar tengah di PC */
+    gap: 15px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Pastikan ini 0 auto */
+    padding: 0;     /* Tambahkan ini untuk menghilangkan kemiringan di HP */
 }
     display: flex; 
     flex-direction: column; 
