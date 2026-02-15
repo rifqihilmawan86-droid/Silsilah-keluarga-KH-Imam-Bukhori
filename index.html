@@ -46,7 +46,7 @@
 <input type="text" id="searchInput" onkeyup="searchFamily()" placeholder="Cari nama anggota keluarga...">
 
     <div class="tree-container">
-        <a href="biografi.html" style="text-decoration: none; color: inherit;">
+        <a href="biografi.html" style="text-decoration: none; color: inherit; display: inline-block;">
             <div class="card">
                 <img src="IMG_9193.PNG" alt="Mbah Bukhori" style="cursor: pointer;">
                 <h4>K.H. Imam Bukhori</h4>
@@ -54,11 +54,8 @@
             </div>
         </a>
     </div>
-        </div>
-
-        <div style="width: 2px; height: 30px; background: var(--primary);"></div>
-
         <div class="row" id="familyList">
+            <div style="width: 2px; height: 30px; background: #2c3e50; margin: 0 auto;"></div>
             <div class="card" onclick="showDetail('Kyai Ahmad', 'Putra ke-1')"><h4>Kyai Ahmad</h4><p>Putra</p></div>
             <div class="card" onclick="showDetail('Nyai Zainab', 'Putri ke-2')"><h4>Nyai Zainab</h4><p>Putri</p></div>
             <div class="card" onclick="showDetail('Nyai Tauhidah', 'Putri ke-3')"><h4>Nyai Tauhidah</h4><p>Putri</p></div>
